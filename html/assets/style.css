@@ -314,6 +314,9 @@ body {
 .Product-hologram {
 	display: flex;
 	position: relative;
+	aspect-ratio: 2/1;
+	align-items: center;
+	justify-content: center;
 }
 
 .Product-hologram a {
