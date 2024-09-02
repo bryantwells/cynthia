@@ -1,0 +1,115 @@
+title: Cynthia
+
+fields:
+
+  info:
+    label:
+    type: info
+    text: |
+      Create shop payment links using Stripe.
+    icon: alert
+
+  shop:
+    label: Shop
+    type: blocks
+    fieldsets:
+      - type: issue
+        preview: fields
+        fields:
+          info:
+            label: Issue Info
+            type: structure
+            min: 1
+            max: 1
+            default:
+              - title: 
+            fields:
+              image: 
+                label: Image
+                type: files
+                multiple: false
+                cover: true
+              issue_number:
+                label: Issue No.
+                type: number
+              title:
+                label: Title
+                type: text
+              description:
+                label: Description
+                type: textarea
+                buttons: false
+              price_usd:
+                label: Price (USD)
+                type: number
+                step: .01
+              price_mxn:
+                label: Price (MXN)
+                type: number
+                step: .01
+              payment_link:
+                label: Payment Link
+                type: url
+      - type: subscription
+        preview: fields
+        fields:
+          info:
+            label: Subscription Info
+            type: structure
+            min: 1
+            max: 1
+            default:
+              - title: 
+            fields:
+              title:
+                label: Title
+                type: text
+              description:
+                label: Title
+                type: textarea
+                buttons: false
+              price_usd:
+                label: Price (USD)
+                type: number
+                step: .01
+              price_mxn:
+                label: Price (MXN)
+                type: number
+                step: .01
+              payment_link:
+                label: Payment Link
+                type: url
+
+  updates:
+    label: Updates
+    type: structure
+    fields:
+      date:
+        label: Date
+        type: date
+      text:
+        label: Text
+        type: text
+      image: 
+        label: Image
+        type: files
+        multiple: false
+        cover: true
+
+
+  about:
+    label: About
+    type: textarea
+    buttons: 
+      - headlines
+      - italic
+      - link
+      - ul
+
+  logo:
+    label: Logo
+    type: files
+    multiple: false
+    cover: true
+
+

@@ -1,0 +1,21 @@
+name: cynthia
+services:
+
+  web:
+    build: 
+      context: ./
+      dockerfile:  Dockerfile.web
+    ports:
+      - 8080:8080
+    volumes:
+      - ./web/html:/var/www/html
+      - ./web/settings.conf:/etc/nginx/conf.d/settings.conf
+
+  php:
+    build: 
+      context: ./
+      dockerfile:  Dockerfile.php
+    volumes:
+      - ./web/html:/var/www/html
+      - ./discord-spider/data:/var/www/discord-spider
+      - ./web/settings.ini:/usr/local/etc/php/conf.d/settings.ini

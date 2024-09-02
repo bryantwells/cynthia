@@ -1,0 +1,25 @@
+title: Home Page
+
+sections:
+  content:
+    type: fields
+    fields:
+
+      info:
+        label: false
+        type: info
+        text: |
+          [Enable developer mode](https://www.google.com/search?q=discord+enable+developer+mode&client=firefox-b-1-d&sca_esv=765881fa522ab74c&ei=2p-MZtr4Kvyw5NoP6rm3qAM&ved=0ahUKEwjazbuR9JiHAxV8GFkFHercDTUQ4dUDCA8&uact=5&oq=discord+enable+developer+mode&gs_lp=Egxnd3Mtd2l6LXNlcnAiHWRpc2NvcmQgZW5hYmxlIGRldmVsb3BlciBtb2RlMgsQABiABBiRAhiKBTIGEAAYCBgeMgYQABgIGB4yCxAAGIAEGIYDGIoFMgsQABiABBiGAxiKBTIIEAAYgAQYogRIoBBQ3wdYpQ9wAHgDkAEAmAGFAaABiAaqAQM4LjG4AQPIAQD4AQGYAgigAvsDwgIEEAAYR8ICBhAAGAcYHsICCBAAGAcYCBgewgIKEAAYsAMY1gQYR8ICBxAAGIAEGA2YAwDiAwUSATEgQIgGAZAGCJIHATigB54_&sclient=gws-wiz-serp) in discord, then right click to copy channel and message ID's.
+
+      discord_updates:
+        label: Discord Updates
+        type: structure
+        fields:
+          channel_id:
+            label: Channel ID
+            type: text
+            required: true
+          message_id:
+            label: Message ID
+            type: text
+            required: true
