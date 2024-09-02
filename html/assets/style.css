@@ -36,7 +36,7 @@ html {
 }
 
 
-@media (max-width: 750px) {
+@media (max-width: 600px) {
 	html {
 		font-size: 14px;
 	}
@@ -105,7 +105,7 @@ body {
 	}
 }
 
-@media (max-width: 750px) {
+@media (max-width: 600px) {
 	.Logo {
 		width: 100%;
 	}
@@ -165,7 +165,7 @@ body {
 	}
 }
 
-@media (max-width: 750px) {
+@media (max-width: 600px) {
 	.Section--home {
 		min-height: calc(100vw - 1.75rlh);
 	}
@@ -201,7 +201,23 @@ body {
 .ProductList {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 2rem 1rem;
+	gap: 3rlh;
+}
+
+@media (max-width: 1000px) {
+	.ProductList {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 3rlh 1rem;
+	}
+}
+
+@media (max-width: 600px) {
+	.ProductList {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 3rlh 1rem;
+	}
 }
 
 /* PRODUCT */
@@ -212,29 +228,9 @@ body {
 	gap: 1rem;
 }
 
-.Product--subscription {
-	/* display: inline-block;
-	margin-top: 1rlh;
-	margin-right: 1rlh; */
-	/* max-width: 400px; */
-}
-
-@media (max-width: 1000px) {
-	.Product--subscription {
-		flex: 0 0 calc(50% - 0.5rem);
-	}
-}
-
-@media (max-width: 750px) {
-	.Product--subscription {
-		flex: 0 0 100%;
-	}
-}
-
 .Product--issue {
 	grid-template-columns: 2fr 1fr;
 	grid-column: 1/-1;
-	
 	flex: 0 0 100%;
 }
 
@@ -244,7 +240,7 @@ body {
 	}
 }
 
-@media (max-width: 750px) {
+@media (max-width: 600px) {
 	.Product--issue {
 		grid-template-columns: 1fr;
 	}
@@ -268,6 +264,14 @@ body {
 	}
 }
 
+@media (max-width: 600px) {
+	.Product--issue .Product-header {
+		aspect-ratio: 2/1;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
 
 .Product-issueNumber {
 	color: var(--color-blue);
@@ -288,6 +292,13 @@ body {
 		font-size: 4rem;
 	}
 }
+
+@media (max-width: 600px) {
+	.Product-issueNumber {
+		position: relative;
+	}
+}
+
 
 .Product-issueNumber::before,
 .Product-issueNumber::after {
@@ -314,9 +325,15 @@ body {
 .Product-hologram {
 	display: flex;
 	position: relative;
-	aspect-ratio: 2/1;
 	align-items: center;
-	justify-content: center;
+	justify-content: flex-start;
+}
+
+@media (max-width: 600px) {
+	.Product-hologram {
+		aspect-ratio: 2/1;
+		justify-content: center;
+	}
 }
 
 .Product-hologram a {
@@ -456,7 +473,7 @@ body {
 }
 
 
-@media (max-width: 750px) {
+@media (max-width: 600px) {
 	.UpdateList {
 		grid-template-columns: repeat(1, 1fr);
 	}
