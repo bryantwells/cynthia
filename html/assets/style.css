@@ -106,9 +106,9 @@ body {
 }
 
 .Logo-image {
-	mask-mode: luminance;
+	mask-mode: alpha;
 	mask-size: contain;
-	-webkit-mask-mode: luminance;
+	-webkit-mask-mode: alpha;
 	-webkit-mask-size: contain;
 	background-color: var(--color-light-blue);
 }
@@ -494,9 +494,9 @@ body {
 
 .Update-image {
 	display: inline-block;
-	mask-mode: luminance;
+	mask-mode: alpha;
 	mask-size: cover;
-	-webkit-mask-mode: luminance;
+	-webkit-mask-mode: alpha;
 	-webkit-mask-size: contain;
 	background-color: var(--color-green);
 	width: 100%;

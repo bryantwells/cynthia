@@ -1,10 +1,11 @@
-PImage img;
+PImage img_in;
+PGraphics img_out;
 float step = 8;
 float pMin = 1;
 float pMax = 5.0;
 
 void settings() {
-  size(int(args[2]),int(args[3]));
+	size(int(args[2]),int(args[3]));
 }
 
 void setup() {
@@ -12,30 +13,33 @@ void setup() {
 	int WIDTH = int(args[2]);
 	int HEIGHT = int(args[3]);
 
-	img = loadImage(SOURCE);
-	img.resize(WIDTH,0);
+	img_in = loadImage(SOURCE);
+	img_in.resize(WIDTH,0);
 
-	background(0);
-	fill(255);
-	noStroke();
+	img_out = createGraphics(width, height);
 	noLoop();
 }
 
 void draw() {
+
+	img_out.beginDraw();
+	img_out.fill(0);
+	img_out.noStroke();
 
 	for (int r = 0; r < width; r += step) {
 		int stops = r * 4;
 		for (float theta = 0; theta < TWO_PI; theta += TWO_PI/stops) {
 			float px = width/2 + (r * cos(theta));
 			float py = height/2 + (r * sin(theta));
-			float value = getAverageValue(img, round(px), round(py), round(pMax))/255;
+			float value = getAverageValue(img_in, round(px), round(py), round(pMax))/255;
 			float pr = pMax - (value * pMax) + pMin;
-			circle(px,py,pr);
+			img_out.circle(px,py,pr);
 		}
 	}
 
 	String TARGET = args[1];
-	save(TARGET);
+	img_out.endDraw();
+	img_out.save(TARGET);
 	exit(); 
 }
 
