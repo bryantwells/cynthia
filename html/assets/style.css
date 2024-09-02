@@ -29,7 +29,7 @@ html {
 	line-height: 1.2;
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1000px) {
 	html {
 		font-size: 16px;
 	}
@@ -99,7 +99,7 @@ body {
 	padding-left: 0.5rem;
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1000px) {
 	.Logo {
 		width: 50%;
 	}
@@ -159,7 +159,7 @@ body {
 	min-height: calc(100vw / 3 - 1.75rlh);
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1000px) {
 	.Section--home {
 		min-height: calc(100vw / 2 - 1.75rlh);
 	}
@@ -219,7 +219,7 @@ body {
 	/* max-width: 400px; */
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1000px) {
 	.Product--subscription {
 		flex: 0 0 calc(50% - 0.5rem);
 	}
@@ -238,7 +238,7 @@ body {
 	flex: 0 0 100%;
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1000px) {
 	.Product--issue {
 		grid-template-columns: 1fr 1fr;
 	}
@@ -262,7 +262,7 @@ body {
 	align-items: start;
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1000px) {
 	.Product--issue .Product-header {
 		flex: unset;
 	}
@@ -283,7 +283,7 @@ body {
 	top: 1rem;
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1000px) {
 	.Product-issueNumber {
 		font-size: 4rem;
 	}
@@ -446,7 +446,7 @@ body {
 	gap: 1rem;
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1000px) {
 	.UpdateList {
 		grid-template-columns: repeat(2, 1fr);
 	}
