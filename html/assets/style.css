@@ -36,12 +36,6 @@ html {
 }
 
 
-@media (max-width: 600px) {
-	html {
-		font-size: 14px;
-	}
-}
-
 h1,
 h2,
 h3 {
@@ -114,6 +108,8 @@ body {
 .Logo-image {
 	mask-mode: luminance;
 	mask-size: contain;
+	-webkit-mask-mode: luminance;
+	-webkit-mask-size: contain;
 	background-color: var(--color-light-blue);
 }
 
@@ -500,6 +496,8 @@ body {
 	display: inline-block;
 	mask-mode: luminance;
 	mask-size: cover;
+	-webkit-mask-mode: luminance;
+	-webkit-mask-size: contain;
 	background-color: var(--color-green);
 	width: 100%;
 	vertical-align: top;

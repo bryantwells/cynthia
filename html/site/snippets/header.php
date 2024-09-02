@@ -10,6 +10,7 @@
 			style="
 				aspect-ratio: 1/1;
 				mask-image: url(<?= $image->etch('circle', 600, 600)->url() ?>);
+				-webkit-mask-image: url(<?= $image->etch('circle', 600, 600)->url() ?>);
 			"></div>
 	</div>
 	

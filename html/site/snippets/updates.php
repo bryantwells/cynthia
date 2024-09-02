@@ -24,6 +24,7 @@
 								max-width: <?= $width ?>px;
 								aspect-ratio: <?= $width ?> / <?= $height ?>;
 								mask-image: url(<?= $image->etch('wave', $width, $height)->url() ?>);
+								-webkit-mask-image: url(<?= $image->etch('wave', $width, $height)->url() ?>);
 							">
 						</div>
 					<?php endif; ?>
