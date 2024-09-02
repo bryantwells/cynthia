@@ -23,8 +23,8 @@ html {
 	font-family: sans-serif;
 	font-size: 20px;
 	background-color: var(--color-bg);
-	/* -webkit-text-stroke-color: currentColor;
-	-webkit-text-stroke-width: 1px; */
+	-webkit-text-stroke-color: currentColor;
+	-webkit-text-stroke-width: 1px;
 	letter-spacing: 0.03em;
 	line-height: 1.2;
 }
