@@ -68,7 +68,7 @@ fields:
                 label: Title
                 type: text
               description:
-                label: Title
+                label: Description
                 type: textarea
                 buttons: false
               price_usd:
