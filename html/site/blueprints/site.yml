@@ -47,8 +47,11 @@ fields:
                 label: Price (MXN)
                 type: number
                 step: .01
-              payment_link:
-                label: Payment Link
+              payment_link_usd:
+                label: Payment Link (USD)
+                type: url
+              payment_link_mxn:
+                label: Payment Link (MXN)
                 type: url
       - type: subscription
         preview: fields
@@ -76,10 +79,12 @@ fields:
                 label: Price (MXN)
                 type: number
                 step: .01
-              payment_link:
-                label: Payment Link
+              payment_link_usd:
+                label: Payment Link (USD)
                 type: url
-
+              payment_link_mxn:
+                label: Payment Link (MXN)
+                type: url
   updates:
     label: Updates
     type: structure

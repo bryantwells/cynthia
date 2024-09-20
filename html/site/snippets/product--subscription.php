@@ -25,8 +25,8 @@
 				<?= number_format($product->price_usd()->toFloat(),2) ?>USD
 			</p>
 			<p>
-				<a href="<?= $product->payment_link() ?>">Compra</a>
-				<a href="<?= $product->payment_link() ?>">Purchase</a>
+				<a href="<?= $product->payment_link_usd() ?>">Compra</a>
+				<a href="<?= $product->payment_link_mxn() ?>">Purchase</a>
 			</p>
 		</div>
 	</figcaption>

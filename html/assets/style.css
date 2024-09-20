@@ -64,6 +64,8 @@ li {
 
 a {
 	color: inherit;
+	text-decoration-thickness: 0.075rem;
+	text-underline-offset: 0.1rem;
 }
 
 a:hover {
@@ -85,23 +87,26 @@ body {
 .Logo {
 	position: fixed;
 	top: 0;
-	right: 0;
-	width: calc(100% / 3);
+	left: 0;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	direction: rtl;
+	padding: 1rem;
+	gap: 1rem;
 	z-index: -1;
 	pointer-events: none;
-	padding: 1rem;
-	padding-left: 0.5rem;
 }
 
 @media (max-width: 1000px) {
 	.Logo {
-		width: 50%;
+		grid-template-columns: 1fr 1fr;
 	}
 }
 
 @media (max-width: 600px) {
 	.Logo {
-		width: 100%;
+		grid-template-columns: 1fr;
 	}
 }
 
@@ -225,7 +230,7 @@ body {
 }
 
 .Product--issue {
-	grid-template-columns: 2fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
 	grid-column: 1/-1;
 	flex: 0 0 100%;
 }
@@ -254,9 +259,16 @@ body {
 	align-items: start;
 }
 
+.Product--issue .Product-image {
+	grid-column: span 2;
+}
+
 @media (max-width: 1000px) {
 	.Product--issue .Product-header {
 		flex: unset;
+	}
+	.Product--issue .Product-image {
+		grid-column: span 1;
 	}
 }
 
