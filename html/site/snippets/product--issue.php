@@ -28,8 +28,8 @@
 				<?= number_format($product->price_usd()->toFloat(),2) ?>USD
 			</p>
 			<p class="Product-meta">
-				<a href="<?= $product->payment_link_mxn() ?>">Compra</a>
-				<a href="<?= $product->payment_link_usd() ?>">Purchase</a>
+				<a href="<?= $product->payment_link_mxn() ?>">Compra (MX)</a>
+				<a href="<?= $product->payment_link_usd() ?>">Purchase (INTL)</a>
 			</p>
 		</div>
 
