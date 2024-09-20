@@ -26,12 +26,12 @@
 		</div>
 		<div class="Product-meta">
 			<p>
-				<?= number_format($product->price_mxn()->toFloat(),2) ?> MXN
 				<a href="<?= $product->payment_link_mxn() ?>">Compra</a>
+				<?= number_format($product->price_mxn()->toFloat(),2) ?> MXN
 			</p>
 			<p>
-				<?= number_format($product->price_usd()->toFloat(),2) ?> USD
 				<a href="<?= $product->payment_link_usd() ?>">Purchase</a>
+				<?= number_format($product->price_usd()->toFloat(),2) ?> USD
 			</p>
 		</div>
 	</figcaption>
