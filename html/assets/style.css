@@ -351,6 +351,7 @@ body {
 
 .Product-meta {
 	color: var(--color-green);
+	margin-bottom: 0.5rlh;
 }
 
 /* HOLOGRAM */

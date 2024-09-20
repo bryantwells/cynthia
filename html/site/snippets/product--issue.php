@@ -23,15 +23,16 @@
 				<?= $product->title() ?>
 			</h2>
 			<?= $product->description()->kt() ?>
-			<p class="Product-meta">
-				<?= number_format($product->price_mxn()->toFloat(),2) ?>MXN
-				<?= number_format($product->price_usd()->toFloat(),2) ?>USD
+		</div>
+		<div class="Product-meta">
+			<p>
+				<?= number_format($product->price_mxn()->toFloat(),2) ?> MXN
+				<a href="<?= $product->payment_link_mxn() ?>">Compra</a>
 			</p>
-			<p class="Product-meta">
-				<a href="<?= $product->payment_link_mxn() ?>">Compra (MX)</a>
-				<a href="<?= $product->payment_link_usd() ?>">Purchase (INTL)</a>
+			<p>
+				<?= number_format($product->price_usd()->toFloat(),2) ?> USD
+				<a href="<?= $product->payment_link_usd() ?>">Purchase</a>
 			</p>
 		</div>
-
 	</figcaption>
 </figure>
