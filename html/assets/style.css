@@ -354,6 +354,10 @@ body {
 	margin-bottom: 0.5rlh;
 }
 
+.Product-meta:last-child {
+	margin-bottom: 0;
+}
+
 /* HOLOGRAM */
 /* ========================================================= */
 
@@ -546,6 +550,34 @@ body {
 .Footer p {
 	font-size: 0.75rem;
 	color: var(--color-blue);
+}
+
+/* BUY BUTTON */
+/* ========================================================= */
+
+.BuyForm {
+	display: flex;
+	gap: 0.5rem;
+}
+
+.BuyForm-button {
+	text-align: center;
+	flex: 1;
+	padding: 0.4rem;
+	padding-bottom: 0.3rem;
+	text-decoration: none;
+	border-radius: 0.2rem;
+	border: 2px solid var(--color-green);
+	display: inline-block;
+}
+
+.BuyForm-button:hover {
+	background-color: var(--color-green);
+	color: var(--color-bg);
+}
+
+.Product--subscription .BuyForm {
+	max-width: max-content;
 }
 
 /* UTILITES */

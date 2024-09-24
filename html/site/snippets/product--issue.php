@@ -25,14 +25,25 @@
 			<?= $product->description()->kt() ?>
 		</div>
 		<div class="Product-meta">
-			<p>
-				<a href="<?= $product->payment_link_mxn() ?>">Compra</a>
-				<?= number_format($product->price_mxn()->toFloat(),2) ?> MXN
-			</p>
-			<p>
-				<a href="<?= $product->payment_link_usd() ?>">Purchase</a>
-				<?= number_format($product->price_usd()->toFloat(),2) ?> USD
-			</p>
+			<div class="BuyForm">
+
+				<?php if ($product->payment_link_mxn() && $product->price_mxn()): ?>
+					<a 
+						class="BuyForm-button"
+						href="<?= $product->payment_link_mxn() ?>">
+						$<?= number_format($product->price_mxn()->toFloat(),2) ?> MXN
+					</a>
+				<?php endif; ?>
+
+				<?php if ($product->payment_link_usd() && $product->price_usd()): ?>
+					<a 
+						class="BuyForm-button"
+						href="<?= $product->payment_link_usd() ?>">
+						$<?= number_format($product->price_usd()->toFloat(),2) ?> USD
+					</a>
+				<?php endif; ?>
+				
+			</div>
 		</div>
 	</figcaption>
 </figure>
