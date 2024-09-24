@@ -5,6 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Cynthia Magazine</title>
 	<link rel="stylesheet" href="/assets/style.css?v=<?= rand() ?>">
+	<meta property="og:title" content="Cynthia Magazine" />
+	<meta property="og:image" content="/assets/social.png" />
 </head>
 <body>
 	<?php snippet('header') ?>
