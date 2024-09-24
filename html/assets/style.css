@@ -244,6 +244,7 @@ body {
 @media (max-width: 600px) {
 	.Product--issue {
 		grid-template-columns: 1fr;
+		gap: 0;
 	}
 }
 
@@ -556,7 +557,7 @@ body {
 /* ========================================================= */
 
 .BuyForm {
-	display: flex;
+	display: inline-flex;
 	gap: 0.5rem;
 }
 
@@ -569,6 +570,7 @@ body {
 	border-radius: 0.2rem;
 	border: 2px solid var(--color-green);
 	display: inline-block;
+	white-space: nowrap; 
 }
 
 .BuyForm-button:hover {
