@@ -235,6 +235,10 @@ body {
 	flex: 0 0 100%;
 }
 
+.Product--subscription {
+	align-items: flex-start;
+}
+
 @media (max-width: 1000px) {
 	.Product--issue {
 		grid-template-columns: 1fr 1fr;
